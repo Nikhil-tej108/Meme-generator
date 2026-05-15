@@ -2,6 +2,6 @@ import retrofit2.http.GET
 import retrofit2.Call
 
 interface MemeApi {
-    @GET("gimme")
+    @GET("gimme/wholesomememes")
     fun getMeme(): Call<MemeResponse>
 }

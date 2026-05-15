@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Theme.MemeGenerator1" parent="android:Theme.Material.Light.NoActionBar" />
+    <!-- App Theme -->
+    <style name="Theme.MemeGenerator1" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- You usually don't need to override colorPrimary in Material3 -->
+        <!-- Material 3 uses colorScheme -->
+    </style>
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.MemeGenerator1.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/app_logo</item>
+        <item name="android:windowSplashScreenAnimationDuration" tools:targetApi="31">500</item>
+        <item name="postSplashScreenTheme">@style/Theme.MemeGenerator1</item>
+    </style>
+
 </resources>
